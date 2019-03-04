@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jiang Zhang's Web Page</title>
+        <style>
+            table {
+                border: 2px solid black;
+                border-collapse: collapse;
+                width: 50%;
+            }
+
+            th, td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+            }
+
+            th {
+                background-color: lightgray;
+            }
+
+            p::selection {
+                color: red;
+                background-color: yellow;
+            }
+
+            @media (min-width: 500px) {
+                h2::before {
+                    content: "Hi, my name is Jiang Zhang and following is some information about me.";
+                }
+            }
+
+            @media (max-width: 499px) {
+                h2::before {
+                    content: "Hi, my name is Jiang Zhang.";
+                }
+            }
+
+            #top {
+                font-size: 36px;
+                color: red;
+            }
+
+            #middle {
+                font-size: 24px;
+            }
+
+            #bottom {
+                font-size: 12px;
+            }
+
+            .name {
+                font-weight: bold;
+                color: blue;
+            }
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        </style>
+    </head>
+    <body>
+      <h2 id="Section1"></h2>
+        <ul>
+          <li>Address: 10 Bonwick CT, The Woodlands, TX USA</li>
+          <li>Phone Number: 972-408-6915</li>
+        </ul>
+        <ol>
+          <li>PhD in Petroleum Engineering from UT Austin</li>
+          <li>Masters in Computer Science from UT Austin</li>
+        </ol>
+        Following is some information about my family.
+        <table id="Section2">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jiang</td>
+            <td>Zhang</td>
+            <td>52</td>
+          </tr>
+          <tr>
+            <td>Zhengxin</td>
+            <td>Zhang</td>
+            <td>51</td>
+          </tr>
+            <td>Xiaying</td>
+            <td>Zhang</td>
+            <td>24</td>
+          </tr>
+        </table>
+        <div>This is my photo</div>
+        <img id="Section3" src="C:\Users\Jiang\Downloads\JiangSelfPhoto.JPG" Width="50%">
+        <p>
+          This is the css "p" selector.
+        </p>
+        <h3>Below is my LinkedIn profile:</h3>
+        <a href="https://www.linkedin.com/in/jiang-zhang/">Jiang Zhang</a>
+
+        <div id="top">
+          If you want to go to the <span class="name">top</span> of this page,
+          Click <a href="#Section1">Top</a>
+        </div>
+        <div id="middle">
+          If you want to go to the <span class="name">middle</span> of this page,
+          Click <a href="#Section2">here</a>
+        </div>
+        <div id="bottom">
+          If you want to go to the <span class="name">bottom</span> of this page,
+          Click <a href="#Section3">bottom</a>
+        </div>
+    </body>
+</html>
